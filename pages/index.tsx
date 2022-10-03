@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
-import { Page } from "../components/Layout/Page";
-import { motion } from "framer-motion";
-import Trace from "../components/Trace/Trace";
+import type { NextPage } from 'next';
+import { Page } from '../components/Layout/Page';
+import { motion } from 'framer-motion';
+import Trace from '../components/Trace/Trace';
 
 const Home: NextPage = () => {
 	return (
@@ -12,26 +12,26 @@ const Home: NextPage = () => {
 					<motion.div
 						style={{
 							maxHeight: 100,
-							overflow: "hidden",
-							alignContent: "end",
-							display: "flex",
-							flexDirection: "column",
-							paddingTop: "20px",
+							overflow: 'hidden',
+							alignContent: 'end',
+							display: 'flex',
+							flexDirection: 'column',
+							paddingTop: '20px'
 						}}
 					>
 						<motion.h1
 							className="text-start"
 							animate={{ y: [-20, -100], opacity: [1, 0] }}
 							transition={{
-								type: "spring",
+								type: 'spring',
 								duration: 0.8,
-								delay: 2.2,
+								delay: 2.2
 							}}
 							style={{
-								fontSize: "64px",
-								marginTop: "30px",
+								fontSize: '64px',
+								marginTop: '30px',
 								lineHeight: 0.8,
-								color: "white",
+								color: 'white'
 							}}
 						>
 							Instant
@@ -41,15 +41,15 @@ const Home: NextPage = () => {
 							initial={{ y: 100, opacity: 0 }}
 							animate={{ y: [0, -110, -110, -200], opacity: [0, 1, 1, 0] }}
 							transition={{
-								type: "spring",
+								type: 'spring',
 								duration: 2.5,
-								delay: 2.3,
+								delay: 2.3
 							}}
 							style={{
-								fontSize: "64px",
-								marginTop: "30px",
+								fontSize: '64px',
+								marginTop: '30px',
 								lineHeight: 0.8,
-								color: "white",
+								color: 'white'
 							}}
 						>
 							Direct
@@ -58,15 +58,15 @@ const Home: NextPage = () => {
 							initial={{ y: 100, opacity: 0 }}
 							animate={{ y: [0, -90, -200], opacity: [0, 0, 1] }}
 							transition={{
-								type: "spring",
+								type: 'spring',
 								duration: 2,
-								delay: 3,
+								delay: 3
 							}}
 							style={{
-								fontSize: "64px",
-								marginTop: "30px",
+								fontSize: '64px',
+								marginTop: '30px',
 								lineHeight: 0.8,
-								color: "white",
+								color: 'white'
 							}}
 						>
 							Simple
@@ -74,11 +74,11 @@ const Home: NextPage = () => {
 					</motion.div>
 					<h2
 						style={{
-							fontSize: "60px",
+							fontSize: '60px',
 							lineHeight: 0.5,
-							marginLeft: "130px",
-							marginBottom: "30px",
-							color: "white",
+							marginLeft: '130px',
+							marginBottom: '30px',
+							color: 'white'
 						}}
 					>
 						Ordering.
@@ -87,48 +87,47 @@ const Home: NextPage = () => {
 					<p
 						className="m-4 text-start"
 						style={{
-							color: "rgba(255, 255, 255, 0.79)",
-							width: "360px",
-							display: "flex",
-							justifyContent: "flex-start",
+							color: 'rgba(255, 255, 255, 0.79)',
+							width: '360px',
+							display: 'flex',
+							justifyContent: 'flex-start'
 						}}
 					>
-						Stay close to your costumers and let them order directly from their
-						phone.
+						Stay close to your costumers and let them order directly from their phone.
 					</p>
 				</div>
 				<div className="col-lg">
-					<div style={{ maxWidth: 500, position: "absolute", top: 0 }}>
+					<div style={{ maxWidth: 500, position: 'absolute', top: 0 }}>
 						<img
 							src="/spot.png"
 							alt="spot"
 							style={{
-								maxWidth: "110%",
-								position: "relative",
-								transform: "translate(-10%,-45%)",
+								maxWidth: '110%',
+								position: 'relative',
+								transform: 'translate(-10%,-45%)'
 							}}
 						/>
 						<Trace />
 						<div
 							style={{
-								position: "relative",
-								transform: "translate(-10%,-350%)",
-								overflow: "hidden",
+								position: 'relative',
+								transform: 'translate(-10%,-330%)',
+								overflow: 'hidden'
 							}}
 						>
 							<motion.img
 								initial={{ x: 20, opacity: 0 }}
 								animate={{ x: 0, opacity: 1 }}
-								transition={{ type: "spring", duration: 1, delay: 0.8 }}
-								src="/landingIphone.svg"
+								transition={{ type: 'spring', duration: 1, delay: 0.8 }}
+								src="/landingIphone.png"
 								alt="Landing Page Iphone"
 								width={220}
 							/>
 							<motion.img
 								initial={{ x: 20, opacity: 0 }}
 								animate={{ x: 0, opacity: 1 }}
-								transition={{ type: "spring", duration: 1, delay: 1 }}
-								src="/menuIphone.svg"
+								transition={{ type: 'spring', duration: 1, delay: 1 }}
+								src="/menuIphone.png"
 								alt="Menu Page Iphone"
 								width={220}
 							/>
