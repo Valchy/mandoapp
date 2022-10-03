@@ -1,17 +1,17 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-const transition = { duration: 2, ease: "easeInOut" };
+const transition = { duration: 2, ease: 'easeInOut' };
 
 export default function Trace() {
 	return (
 		<div className="container">
 			<svg
 				style={{
-					position: "relative",
-					left: "50%",
-					transform: "translate(-45%, -110%)",
-					maxWidth: "170%",
-					minWidth: 300,
+					position: 'relative',
+					left: '50%',
+					transform: 'translate(-45%, -110%)',
+					maxWidth: '170%',
+					minWidth: 300
 				}}
 				width="842"
 				height="778"
@@ -39,42 +39,21 @@ export default function Trace() {
 						width="924.065"
 						height="776.445"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood flood-opacity="0" result="BackgroundImageFix" />
-						<feColorMatrix
-							in="SourceAlpha"
-							type="matrix"
-							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-							result="hardAlpha"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
 						<feOffset dy="4" />
 						<feGaussianBlur stdDeviation="2" />
 						<feComposite in2="hardAlpha" operator="out" />
-						<feColorMatrix
-							type="matrix"
-							values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-						/>
-						<feBlend
-							mode="normal"
-							in2="BackgroundImageFix"
-							result="effect1_dropShadow_94_4"
-						/>
-						<feBlend
-							mode="normal"
-							in="SourceGraphic"
-							in2="effect1_dropShadow_94_4"
-							result="shape"
-						/>
+						<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+						<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_94_4" />
+						<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_94_4" result="shape" />
 					</filter>
 				</defs>
 			</svg>
 
-			<motion.div
-				initial={{ offsetDistance: "0%", scale: 2.5 }}
-				animate={{ offsetDistance: "100%", scale: 1 }}
-				transition={transition}
-			/>
+			<motion.div initial={{ offsetDistance: '0%', scale: 2.5 }} animate={{ offsetDistance: '100%', scale: 1 }} transition={transition} />
 		</div>
 	);
 }
