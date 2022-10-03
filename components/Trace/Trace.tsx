@@ -22,8 +22,8 @@ export default function Trace() {
 				<g filter="url(#filter0_d_94_4)">
 					<motion.path
 						fill="transparent"
-						stroke-width="25"
-						stroke-linecap="round"
+						strokeWidth="25"
+						strokeLinecap="round"
 						initial={{ pathLength: 0 }}
 						animate={{ pathLength: 1 }}
 						transition={transition}
