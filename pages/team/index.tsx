@@ -47,6 +47,14 @@ export default function Team({ teamMembers }) {
 			id: 111
 		}
 	};
+	const kalistaMember = {
+		name: 'Kalista',
+		position: 'UI / UX Designer',
+		avatar: {
+			url: 'https://scontent.fbcn8-1.fna.fbcdn.net/v/t1.18169-1/14520451_1011152092330736_3986408846250227867_n.jpg?stp=dst-jpg_p320x320&_nc_cat=102&ccb=1-7&_nc_sid=7206a8&_nc_ohc=aZ-Vnf2CWOYAX8BuYgD&_nc_ht=scontent.fbcn8-1.fna&oh=00_AT8aewkVPCBxvygxbqk_XiRCPPg4bC8zzXnZb9e6BT42VA&oe=6362AC25',
+			id: 8811
+		}
+	};
 	const yordanMember = {
 		name: 'Yordan',
 		position: 'Backend Developer',
@@ -59,15 +67,16 @@ export default function Team({ teamMembers }) {
 	return (
 		<Page>
 			<title>Mando | Team</title>
-			<motion.div className="container" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }}>
+			<motion.div className="flex justify-content-center" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }}>
 				<Header>Our team</Header>
-				<div className="row justify-content-between d-flex ">
+				<div className="row justify-content-between d-flex" style={{ width: 1700, maxWidth: '95vw' }}>
 					{teamMembers.map(member => (
 						<TeamMembers member={member} key={member.id} />
 					))}
 					<TeamMembers member={valeriMember} />
 					<TeamMembers member={philippMember} />
 					<TeamMembers member={olegMember} />
+					<TeamMembers member={kalistaMember} />
 					<TeamMembers member={yordanMember} />
 				</div>
 			</motion.div>
