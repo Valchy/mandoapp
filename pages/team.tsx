@@ -51,7 +51,7 @@ export default function Team({ teamMembers }) {
 		name: 'Kalista',
 		position: 'UI / UX Designer',
 		avatar: {
-			url: 'https://scontent.fbcn8-1.fna.fbcdn.net/v/t1.18169-1/14520451_1011152092330736_3986408846250227867_n.jpg?stp=dst-jpg_p320x320&_nc_cat=102&ccb=1-7&_nc_sid=7206a8&_nc_ohc=aZ-Vnf2CWOYAX8BuYgD&_nc_ht=scontent.fbcn8-1.fna&oh=00_AT8aewkVPCBxvygxbqk_XiRCPPg4bC8zzXnZb9e6BT42VA&oe=6362AC25',
+			url: '/kalista.jpeg',
 			id: 8811
 		}
 	};
