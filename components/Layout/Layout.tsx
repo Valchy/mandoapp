@@ -21,13 +21,13 @@ export default function Layout({ children }: DashboardLayoutProps) {
 						</Link>
 						<div className="col d-flex justify-content-end mr-5">
 							<Link href="/about">
-								<ButtonCol>About</ButtonCol>
+								<ButtonCol>About_</ButtonCol>
 							</Link>
 							<Link href="/team">
-								<ButtonCol>Our team</ButtonCol>
+								<ButtonCol>Team_</ButtonCol>
 							</Link>
 							<Link href="/contact">
-								<ButtonCol>Contact us</ButtonCol>
+								<ButtonCol>Contact_</ButtonCol>
 							</Link>
 						</div>
 					</div>
