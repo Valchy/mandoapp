@@ -1,7 +1,7 @@
-import { Page } from '../../components/Layout/Page';
-import TeamMembers from '../../components/Team/Team';
-import { GetTeamMembersQuery } from '../../generated/graphql';
-import { Header } from '../../components/Team/styles';
+import { Page } from '../components/Layout/Page';
+import TeamMembers from '../components/Team/Team';
+import { GetTeamMembersQuery } from '../generated/graphql';
+import { Header } from '../components/Team/styles';
 import { motion } from 'framer-motion';
 import { gql, request } from 'graphql-request';
 

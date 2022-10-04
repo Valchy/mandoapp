@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { ReactNode, useRef, useState } from "react";
-import { NavbarLogo, ButtonCol, Navbar } from "./styles";
-import { useRouter } from "next/router";
-import { motion } from "framer-motion";
+import Link from 'next/link';
+import { ReactNode, useRef, useState } from 'react';
+import { NavbarLogo, ButtonCol, Navbar } from './styles';
+import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 type DashboardLayoutProps = {
 	children: ReactNode;
@@ -13,10 +13,7 @@ export default function Layout({ children }: DashboardLayoutProps) {
 
 	return (
 		<div className="App">
-			<div
-				className=" d-flex justify-content-between "
-				style={{ minWidth: "100vw" }}
-			>
+			<div className=" d-flex justify-content-between " style={{ minWidth: '100vw' }}>
 				<Navbar className="Navbar row">
 					<div className="col d-flex">
 						<Link href="/">
@@ -24,10 +21,13 @@ export default function Layout({ children }: DashboardLayoutProps) {
 						</Link>
 						<div className="col d-flex justify-content-end mr-5">
 							<Link href="/about">
-								<ButtonCol>About_</ButtonCol>
+								<ButtonCol>About</ButtonCol>
 							</Link>
 							<Link href="/team">
-								<ButtonCol>We Are Mando_</ButtonCol>
+								<ButtonCol>Our team</ButtonCol>
+							</Link>
+							<Link href="/contact">
+								<ButtonCol>Contact us</ButtonCol>
 							</Link>
 						</div>
 					</div>
@@ -36,21 +36,21 @@ export default function Layout({ children }: DashboardLayoutProps) {
 				<div
 					className="row w-100"
 					style={
-						router.pathname === "/"
+						router.pathname === '/'
 							? {
-									overflow: "hidden",
-									minHeight: "100vh",
+									overflow: 'hidden',
+									minHeight: '100vh'
 							  }
 							: {}
 					}
 				>
 					<div
 						style={{
-							minHeight: "90vh",
-							display: "flex",
-							justifyContent: "center",
-							alignContent: "center",
-							paddingTop: "10vh",
+							minHeight: '90vh',
+							display: 'flex',
+							justifyContent: 'center',
+							alignContent: 'center',
+							paddingTop: '10vh'
 						}}
 					>
 						{children}

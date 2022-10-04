@@ -1,12 +1,11 @@
-import { Page } from "../../components/Layout/Page";
-import { gql, request } from "graphql-request";
-import { GetAboutPageQuery } from "../../generated/graphql";
-import SectionOne from "../../components/About/SectionOne";
-import SectionTwo from "../../components/About/SectionTwo";
-import SectionThree from "../../components/About/SectionThree";
+import { Page } from '../components/Layout/Page';
+import { gql, request } from 'graphql-request';
+import { GetAboutPageQuery } from '../generated/graphql';
+import SectionOne from '../components/About/SectionOne';
+import SectionTwo from '../components/About/SectionTwo';
+import SectionThree from '../components/About/SectionThree';
 
-const gqlUrl =
-	"https://api-eu-central-1.graphcms.com/v2/cl345fns355od01xqgs8ugfv9/master";
+const gqlUrl = 'https://api-eu-central-1.graphcms.com/v2/cl345fns355od01xqgs8ugfv9/master';
 
 export const GET_ABOUT_PAGE = gql`
 	query GetAboutPage {
@@ -30,8 +29,8 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			sections: data.pages[0].sections,
-		},
+			sections: data.pages[0].sections
+		}
 	};
 }
 
