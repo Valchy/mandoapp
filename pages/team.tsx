@@ -63,6 +63,14 @@ export default function Team({ teamMembers }) {
 			id: 222
 		}
 	};
+	const johnMember = {
+		name: 'John',
+		position: 'Finance Expert',
+		avatar: {
+			url: '/john.jpg',
+			id: -11
+		}
+	};
 
 	return (
 		<Page>
@@ -78,6 +86,7 @@ export default function Team({ teamMembers }) {
 					<TeamMembers member={olegMember} />
 					<TeamMembers member={kalistaMember} />
 					<TeamMembers member={yordanMember} />
+					<TeamMembers member={johnMember} />
 				</div>
 			</motion.div>
 		</Page>
